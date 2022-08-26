@@ -26,8 +26,9 @@ function atualizarTexto() {
 function mudarTexto() {
     setInterval(atualizarTexto, 3000); //O texto vai ser atualizado a cada 3 segundos
 } */
+
 var numero = 0;
-var interval;
+var timer;
 
 function atualizarTexto() {
 
@@ -37,11 +38,13 @@ function atualizarTexto() {
 }
 
 function iniciar() {
-    interval = setInterval(atualizarTexto, 1000)
+
+    timer = setTimeout(atualizarTexto, 1000);
 }
 
-function parar(){
-    clearInterval(interval);
+function parar() {
+
+    clearTimeout(timer);
 }
 
 
