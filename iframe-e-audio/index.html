@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeo com iframe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Vídeo</h1>
+    <iframe class="frame" src="https://www.youtube.com/embed/jfKfPfyJRdk" title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+
+    <h1>Áudio</h1>
+    <audio controls>
+        <source src="./assets/audio1.ogg" type="audio/ogg">
+        <source src="./assets/audio.mp3" type="audio/mpeg">
+        <!--Se o navegador não conseguir executar o áudio ogg, ele tentará executar esse áudio. Somente um player vai aparecer na página-->
+    </audio>
+</body>
+
+</html>
