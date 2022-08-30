@@ -15,11 +15,20 @@
         allowfullscreen></iframe>
 
     <h1>Áudio</h1>
-    <audio controls>
+
+    <audio id="audio1" controls>
         <source src="./assets/audio1.ogg" type="audio/ogg">
         <source src="./assets/audio.mp3" type="audio/mpeg">
         <!--Se o navegador não conseguir executar o áudio ogg, ele tentará executar esse áudio. Somente um player vai aparecer na página-->
+        <script src="./script.js"></script>
     </audio>
+    <div class="controle">
+        <img class="btn" onclick="retroceder()" src="./assets/icons/rewind.png">
+        <img class="btn" onclick="avancar()" src="./assets/icons/fast-forward.png">
+        <img class="btn" onclick="diminuir_vel()" src="./assets/icons/minus.png">
+        <img class="btn" onclick="aumentar_vel()" src="./assets/icons/plus.png">
+        <img class="btn" onclick="stop()" src="./assets/icons/stop.png">
+    </div>
 </body>
 
 </html>
