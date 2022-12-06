@@ -56,17 +56,17 @@ db.collection("turmaA").add({
 //adicionar novo documento a uma coleção definindo um id
 db.collection("turmaA").doc("AlunoNovo").set({
     nome: "Mariana",
-    sobrenome: "Oliveira",
+    sobrenome: "Oliver",
     notas: {
         nota1: 8.6, nota2: 7.5
     },
 }
 ).then(() => {
-    console.log("Documento inserido com sucesso:");
+    console.log("Documento inserido com sucesso");
 }).catch(err => {
     console.log(err);
 })
 
 
 
-//modificar um documento
+//Para modificar um documento usamos o set também. Se o nome do documento já existir, ele vai ser modificado, senão ele vai ser adicionado
